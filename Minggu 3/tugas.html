@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Tugas Minggu 3</title>
+    </head>
+    <body id="body">
+        <div>
+            <label>Select theme:</label>
+            <select id="tema" onchange="ubah()">
+                <option disabled selected value>--Theme--</option>
+                <option value="lightmode">White</option>
+                <option value="darkmode">Black</option>
+            </select>
+        </div>
+        <div>
+            <h1>Tugas Minggu 3</h1>
+            <p>Muhammad Faqih <br> (119140012) <br> RA</p>
+        </div>
+        <div>
+            <label>Select the song highlight from Keshi's song:</label>
+            <select id="kata" onchange="keluar()">
+                <option disabled selected value>--Word--</option>
+                <option value="2soon">2 Soon</option>
+                <option value="more">more</option>
+                <option value="besideyou">beside you</option>
+            </select>
+            <p id="keluaran"></p>
+        </div>
+        <div>
+            <label>Input Number:</label>
+            <input type="number" id="angka">
+            <button onclick="faktorial()">Factorial</button>
+            <p id="hasil"></p>
+        </div>
+        <script type="text/javascript" src="script.js"> 
+        </script>
+    </body>
+</html>
