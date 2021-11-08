@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Minggu 4</title>
+    </head>
+    <body bgcolor="azure">
+        <center><h2>Data Mahasiswa</h2></center>
+        <table style="margin-left:auto;margin-right:auto;width: 30%;" border="1">
+            <thead>
+                <tr>
+                    <th>No</th>
+                    <th>NIM</th>
+                    <th>Nama</th>
+                    <th>Prodi</th>
+                    <th>Angkatan</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody id="tabel">
+
+            </tbody>
+        </table>
+        <center><h2>Tambah Data</h2></center>
+        <table style="margin-left:auto;margin-right:auto">
+            <tr>
+                <td>ID</td>
+                <td>:</td>
+                <td><input type="number" name="id" disabled></td>
+            </tr>
+            <tr>
+                <td>NIM</td>
+                <td>:</td>
+                <td><input type="number" name="nim"></td>
+            </tr>
+            <tr>
+                <td>Nama</td>
+                <td>:</td>
+                <td><input type="text" name="nama"></td>
+            </tr>
+            <tr>
+                <td>Prodi</td>
+                <td>:</td>
+                <td><select name="prodi">
+                    <option value="IF">Teknik Informatika</option>
+                    <option value="EL">Teknik Elektro</option>
+                    <option value="TF">Teknik Fisika</option>
+                    <option value="PWK">Perancangan Wilayah dan Kota</option>
+                    <option value="AR">Arsitektur</option>
+                    <option value="SI">Teknik Sipil</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>Angkatan</td>
+                <td>:</td>
+                <td><select name="angkatan">
+                    <option value="2016">2016</option>
+                    <option value="2017">2017</option>
+                    <option value="2018">2018</option>
+                    <option value="2019">2019</option>
+                    <option value="2020">2020</option>
+                    <option value="2021">2021</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td><button onclick="insertData()">Insert Data</button>
+                    <button onclick="editData()">Update Data</button>
+                    <button onclick="deleteData()">Delete Data</button>      
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td id="errorMessage"></td>
+            </tr>
+        </table>
+        <script type="text/javascript" src="jquery-3.6.0.min.js"></script>
+        <script type="text/javascript" src="index.js"></script>
+    </body>
+    <footer>
+        <center>by Muhammad Faqih <Br>
+            119140012</center>
+    </footer>
+</html>
